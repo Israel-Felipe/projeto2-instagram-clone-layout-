@@ -26,7 +26,6 @@ a {
     position: fixed;
     top: 0;
     z-index: 2;
-    border-radius: 5px;
     border-bottom: solid 1px #dbdbdb;
 }
 
@@ -242,12 +241,7 @@ ion-icon {
 }
 
 /* aqui a sidebard */
-.sidebara {
-    width: 293px;
-    margin: 88px 0 0 28px;   
-    position: fixed;
-    left: 60vw;
-}
+
 .sidebar {
     width: 293px;
     height: fit-content;
@@ -359,7 +353,9 @@ ion-icon {
     line-height: 12px;
     color: #c7c7c7;
 }
-
+.menudebaixo {
+    display: none;
+}
 
 /* LAYOUT RESPONSIVO */
 @media (max-width: 935px) {
@@ -403,4 +399,20 @@ ion-icon {
 .logoinstagram {
     display: unset;
 }
+
+.menudebaixo {
+    width: 100%;
+    height: 54px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top: solid 1px #dbdbdb;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
 }
