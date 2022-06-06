@@ -17,7 +17,7 @@ a {
 
 /* aqui começa cabeçalho da pagina */
 .cabecalho {
-    width: 100vw; 
+    width: 100%; 
     height: 54px; 
     background-color: #FFFFFF;
     display: flex;
@@ -50,6 +50,9 @@ ion-icon {
     height: 22px;
     background-color: #BDBDBD;
     margin: 16px 10px;
+}
+.instagram img {
+    margin-top: 5px;
 }
 
 .topo img {
@@ -155,12 +158,16 @@ ion-icon {
 
 .post { /* aqui é a div padrão das colunas de post */
     margin-bottom: 60px;
-    background-color: #FFFFFF;
     height: auto;
+    width: auto;
     border-radius: 5px;
     border: solid 1px #dbdbdb;
+    background-color: #FFFFFF;
 }
-
+.post img {
+    width: 100%;
+    height:612px;
+}
 .postcabecalho {
     display: flex;
     align-items: center;
@@ -204,8 +211,9 @@ ion-icon {
     box-sizing: border-box; 
     height: 76px;
 }
+
 .interacao {
-    
+ 
     display: flex;
     justify-content: space-between;
 }
@@ -364,6 +372,9 @@ ion-icon {
 .container {
     justify-content: center;
 }
+.container {
+    width: 100%;
+}
 .topo {
     padding-left: 15px;
     padding-right: 15px;
@@ -372,7 +383,14 @@ ion-icon {
 }
 
 
+/* mobile */
+
 @media (max-width: 614px) {
+
+.body, .container, .conteudo, .stories, .feed, .topo, .cabecalho {
+        width: 100vw;
+}
+
 .barrapesquisar, .risquinho {
         display: none;
 }
@@ -382,7 +400,9 @@ ion-icon {
     margin-top: 50px;
     margin-bottom: -20px;
     border: none;
+    overflow: hidden;
 }
+
 #setinha {
     display: none;
 }
@@ -399,7 +419,7 @@ ion-icon {
 }
 
 .menudebaixo {
-    width: 100%;
+    width: 100vw;
     height: 54px;
     padding: 20px;
     box-sizing: border-box;
@@ -408,8 +428,6 @@ ion-icon {
     align-items: center;
     background-color: #FFFFFF;
     border-top: solid 1px #dbdbdb;
-    
-  
     position: fixed;
     bottom: 0;
     z-index: 1;
