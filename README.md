@@ -1,5 +1,3 @@
 # projeto2-instagram
 
-##
-
-### Projeto página fake do Instagram
+https://israel-felipe.github.io/projeto2-instagram/
